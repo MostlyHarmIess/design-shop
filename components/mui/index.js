@@ -1,5 +1,5 @@
 import Button from "@mui/material/Button";
-import EditIcon from "@mui/icons-material/edit";
+import EditIcon from "@mui/icons-material/Edit";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
