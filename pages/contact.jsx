@@ -1,13 +1,15 @@
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 import { Button, EditIcon } from "@/components/mui";
 import Layout from "@/components/Layout";
 import Heading from "@/components/Heading";
 import Paragraph from "@/components/Paragraph";
-const inter = Inter({ subsets: ["latin"] });
+import ContactForm from "@/components/forms/ContactForm";
+import { sendEmail } from "@/lib/api-functions/client";
+// const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function Contact() {
   return (
     <>
       <Head>
@@ -17,11 +19,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <Heading component="h2">contact</Heading>
-        <Button variant="contained">
-          <EditIcon />
-          contact
-        </Button>
+        <Heading component="h2">Contact Us</Heading>
+        <ContactForm submitHandler={sendEmail} />
       </Layout>
     </>
   );
