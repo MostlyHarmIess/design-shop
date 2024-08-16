@@ -18,6 +18,7 @@ import Heading from "@/components/Heading";
 import { AllPosts } from "@/lib/hygraph/queries";
 
 export default function Blog({ ssd = [] }) {
+  console.log("ssd", ssd);
   return (
     <>
       <Head>

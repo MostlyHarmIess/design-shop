@@ -42,7 +42,7 @@ export async function getStaticProps(context) {
   // If this was remote we'd use 'prefetchQuery' but as we know it we use 'setQueryData'
   await queryClient.setQueryData(
     [STORAGE_KEY],
-    JSON.parse(JSON.stringify(products)) 
+    JSON.parse(JSON.stringify(products))
   );
 
   return {

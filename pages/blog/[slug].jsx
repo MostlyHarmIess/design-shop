@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import Markdown from "marked-react";
+import Markdown from 'marked-react';
 import {
   Button,
   List,
